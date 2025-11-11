@@ -33,7 +33,8 @@ It eliminates the need to manually create EC2 servers from the AWS console.
 
 ## 📂 Project Structure
 
-.
-├── main.tf # Main Terraform configuration (EC2 + Security Group)
-├── .terraform.lock.hcl # Provider dependency lock file
-└── README.md # Project documentation
+ ├── main.tf # Main Terraform configuration (EC2 + Security Group)
+
+ ├── terraform.lock.hcl # Provider dependency lock file
+ 
+ └── README.md # Project documentation
