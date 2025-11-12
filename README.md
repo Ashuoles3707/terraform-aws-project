@@ -1,40 +1,9 @@
-# 🚀 Terraform AWS EC2 Deployment
+This project explains how to create a Linux EC2 instance on AWS using Terraform. It helps you set up a cloud server easily by writing simple code instead of doing everything manually on the AWS console. The main goal of this project is to show how Terraform can make the process of creating and managing cloud resources faster and more consistent.
 
-This project demonstrates how to provision a **Linux EC2 instance on AWS** using **Terraform**.  
-It showcases the use of Infrastructure as Code (IaC) to deploy cloud resources in an automated, repeatable, and consistent manner.
+The tools used in this project include Terraform, which helps in building and managing cloud resources using code, and AWS EC2, which provides a virtual Linux server to run your applications. AWS IAM is used to give Terraform permission to access and create resources on AWS. Git and GitHub are used to store and track project files, and the commands are run using either a Windows or Ubuntu terminal.
 
----
+In this project, Terraform is used to automatically create a Linux EC2 instance on AWS along with its security settings. This means you do not need to manually create servers or configure security groups from the AWS website. Instead, a few Terraform commands can do everything for you.
 
-## 🧰 Tools & Technologies Used
+The project performs a few main tasks. It launches a Linux EC2 instance, sets up a security group for safe access, and uses or creates a key pair for SSH login. The whole process is automated, making it simple and time-saving.
 
-| Tool/Tech | Purpose |
-|-----------|----------|
-| Terraform | Infrastructure as Code |
-| AWS EC2   | Virtual Machine (Linux Server) |
-| AWS IAM   | Permissions & access for Terraform |
-| Git & GitHub | Version control |
-| Windows / Ubuntu Terminal | Execution environment |
-
----
-
-## 📍 Project Overview
-
-This Terraform configuration creates a **Linux EC2 instance** on AWS with the required networking and security configuration.  
-It eliminates the need to manually create EC2 servers from the AWS console.
-
-### ✅ What This Project Does
-
-- Deploys a Linux EC2 instance (Amazon Linux / Ubuntu)  
-- Creates a Security Group for secure access  
-- Generates or uses a key pair for SSH login  
-- Automates the entire provisioning using Terraform commands  
-
----
-
-## 📂 Project Structure
-
- ├── main.tf # Main Terraform configuration (EC2 + Security Group)
-
- ├── terraform.lock.hcl # Provider dependency lock file
- 
- └── README.md # Project documentation
+The project is made up of a few important files. The main file, called main.tf, contains the code to create the EC2 instance and security group. The terraform.lock.hcl file keeps track of the provider details used by Terraform, and the README.md file includes all the project information and usage instructions.
