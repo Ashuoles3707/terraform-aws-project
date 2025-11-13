@@ -7,13 +7,3 @@ In this project, Terraform is used to automatically create a Linux EC2 instance 
 The project performs a few main tasks. It launches a Linux EC2 instance, sets up a security group for safe access, and uses or creates a key pair for SSH login. The whole process is automated, making it simple and time-saving.
 
 The project is made up of a few important files. The main file, called main.tf, contains the code to create the EC2 instance and security group. The terraform.lock.hcl file keeps track of the provider details used by Terraform, and the README.md file includes all the project information and usage instructions.
-
-DevOps Engineer -----> Terraform files -----> Terraform Core -----> AWS , Azure
-                            (.tf)                   |
-                                                    |
-                                                    |
-                                                    |
-                                                    |
-                                                    -
-                                             Terraform State
-                                               (.tfstate)
